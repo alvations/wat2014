@@ -75,9 +75,6 @@ if [[ ! -e $TD/Ckylark ]]; then
     wget http://www.phontron.com/download/ckylark-ctb.tar.gz
     tar -xzf ckylark-ctb.tar.gz
     rm ckylark-ctb.tar.gz
-
-    # Unzip models
-    gunzip $TD/Ckylark/model/*.gz
     
     # Create symbolic link to lowercase $TD/cylark directory 
     # (somehow travatar's preprocess.pl uses it when doing one-best parse,
